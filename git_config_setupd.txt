@@ -19,6 +19,12 @@ Ensure install gin in wind/linux system
 5.3)git commit -m "New dev project"
 5.4)git push
 6)git push --set-upstream origin ravi-proj-dev ( If you want to update to new branch)
+==============================================================
+To Merge the branch
+dev-proj1 and dev-proj2
+1)git branch - O/T dev-proj1 (currnet dev branch)
+2)git checkout master -O/T (* master branch)
+3)git merge dev-proj1
 
 Git Repository Credentials:
 git Login : treddy2
