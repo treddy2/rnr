@@ -1,0 +1,44 @@
+Kubernetes Engine:
+=====================
+1)Build An image
+2)push image to container registry
+  enable " container registry "
+  authenticate to "configure-docker"
+  push image to container registry
+3)Create the "Kubernetes Cluster from GCP Console"
+4)Deploying sample application in GKE CLuster
+    create kubernetes deployment to run the application on the cluster 
+    create horizontal Pod auto-scaler 
+5)Expose web application to internet.
+===================================================
+
+git clone https://github.com/GoogleCloudPlatform/kubernetes-engine-samples
+cd kubernetes-engine-samples/hello-app
+export PROJECT_ID = [YOUR PROJECT ID]
+docker build -t gcr.io/${PROJECT_ID}/hello-app:v1 .  
+docker images
+gcloud services enable containerregistry.googleapis.com
+gcloud auth configure-docker
+docker push gcr.io/${PROJECT_ID}/hello-app:v1
+=========================================
+
+To Expose the ipaddress
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "hcl-psapp-gke-config-service"
+  namespace: "default"
+  labels:
+    app: "hcl-psapp-gke-config"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 8000
+  selector:
+    app: "hcl-psapp-gke-config"
+  type: "LoadBalancer"
+  loadBalancerIP: ""
+
+
+ 

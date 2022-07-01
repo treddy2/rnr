@@ -1,0 +1,82 @@
+
+
+
++++++++++++++++++++
+Create mysql instance
+====================
+1)select MYSql 5.1 and not root password
+2)select region and zone whihc is near to your location
+3)select configuration and config Vpc(1),Memory(10 GB) from SSD
+4)click on create". it will take 5 min between 10 min
+5)gcloud sql connect psappdb --user=root --quiet
+Test by creating " create database testdb;"
+6)To Connect MYSQL instance from Python application. we need to add the "Network " to allow filewalls.
+7)Go to "Add network" 
+8)provide name "appdb-firewall" and hostname "0.0.0.0/0"
+9)click "Done"
+10)click "Save"
+11)Now time to create ssl - certificates
+12)While still on the Connections tab, 
+  we scroll down to the SSL section. 
+  Click Allow only SSL connections 
+  and then Create a client certificate — provide "name" download all three .pem files — we will use them when connecting with Python.
+13)create folder(ssl) in the project folder and paste client-key.pem, client-cert.pem and server-ca.pem from the local downloaded.
+mysql -uroot -p -h 35.200.244.246 --ssl-ca=server-ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem
+
+ mysql --ssl-ca=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/server-ca.pem --ssl-cert=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/client-cert.pem --ssl-key=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/client-key.pem --host=35.239.29.23  --user=ravindra
+  mysql -uroot -p -h 35.239.29.23 --ssl-ca=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/server-ca.pem --ssl-cert=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/client-cert.pem --ssl-key=/home/ravi_rdyt/Profile-screen-app/HCL_Profile_Screen/ravi-proj/ssl/client-key.pem 
+
+Technologies
+===================================================================================================================
+Field service lightning|service cloud(20),apex(20),trigger(20),lwc(10),lightning(10),visualforce page(20)
+Google cloud platform|compute engine(10),storage(10),admin(5),development(5),ai(10),big query(5),data flow(5),data table(5),cloud sql(5),app enginee(5),kubernties engine(5),cloud functions(5),pub-sub(5),logging(5),cloud compute(5),appizee(5),fire base(5)
+Hadoop|spark sql(15),spark streaming(15),spark(10),oozi(5),zookeeper(5),hdfs(10),flink(10),hive(20),pig(5),map reduce(5)
+Java|servlets(5),jsf(5),jboss(5),netbeans(3),eclipse(7),core java(10),spring(10),ejb(10),hibernate(5),spring boot(10),spring mvc(10),spring cloud(10),tomcat(10)
+
+Company NAmes
+====================================================================================
+Tier-1(12)|infinite Computer solutions,Oracle,Tata Consultancy Services Ltd,tcs,techmahindra,wipro,hcl,infosys,cts,csc,tvs,aligies,siemens,crown technologies,astrazenca,sonata,birlasoft,capital one,capital first,zeroda,kotak mahindra,hdfc,icici bank,cisco
+Tier-2(6)|igate,Artech Infosystems Pvt. Ltd,BizEE Technologies Pvt. Ltd,IBM India Pvt Ltd,accenture,cognizant,google,amazon,azure,sap,harmon technologies,xerox,benz,micorsoft,indian bank,techzig
+Tier-3(7)|carrernet solutions,IkYA,Huawei Technologies,ananta technologies,SyenaInfoSoft India Pvt.Ltd,Johnson Controls,Interfiber Networks,act fibernet,C-Edge Tech,nomura Research Institute Financial Technologies India Pvt Ltd,Quarks Technosoft Pvt Ltd,jellyfish technologies,shootzu,vk technologies,anju software,nokia,vfsglobal,FUJITSU CONSULTING INDIA,ivtl infoview technologies,vaken technologies,experis,e2z source,ibm,citi bank,anz,generic electric,teamware technologies,hp technologies,dell,delloite,bosch,sony,samsung
+
+===========================================================================================
+s9tmv5fnph
+===============
+
+9*10/100 = 0.9
+3*10/100 = 0.03
+5*5/100 = 0.25
+=============== MTier-  
+tech 
+1.67 - Naveed  1.40 = 1.19*70/100 +  0.42*30/100 = 1.62 
+0.37 - Ravindra 3.70 = 0.26 + 1.11 = 1.37
+====================
+Tech(70%) Tier(30%)
+                   
+2.47*70/100+0.8*30/100 = 1.729 + 0.24 = 1.81+0.24 = 2.05 should be implemented
+
+
+
+2.47+1.27+1.1+0.65+0.57+0.52+0.47+0.4+0.3+0.25+0.25 = 8.25
+gauravch	2.47	0.8					1		10		4	10			2	0	1	2
+Ravindra	1.27	1.24					1	4	1			4	1		2	1	2	1
+SHOEBAHM	1.1	1.24				1	1	9							1	1	2	1
+ANKURMOD	0.65	1.04						1	2		1	2			1	1	0	2
+ANKITGUP	0.57	0.48					1	1	2			2				1	0	0
+NageshRe	0.52	1.44			1		1		1		2	1			1	3	0	0
+AashikNi	0.47	1.28					1		2			2				1	1	2
+SriAnush	0.4	1.24	1						1		1	1	1			2	0	1
+RohanMah	0.3	0.48							3							1	0	0
+SaikatGh	0.25	0.48							1		1	1				1	0	0
+TPREMCHA	0.25
+
+
+$(document).ready(function(){
+  $("#techweight").change(function() {
+    var selectText = $(this).find("option:selected").text();
+    var defltWeightage = 100;
+    var tierWeightage = defltWeightage - selectText;
+    $(".tierweight").text(tierWeightage);
+    alert(tierWeightage);
+  });
+});

@@ -1,0 +1,27 @@
+netstat -o -a
+
+Git project setup Commands to push code and pull code
+==========================================================
+Ensure install gin in wind/linux system
+1)git --version  - (verify Git installed)
+2)create ravi-proj Directory
+3)cd ravi-proj
+4)create a file test.py and add some content
+5)git init
+6)git config --global user.name treddy2
+7)git add test.py / git add * ----> To move the folder
+8)git commit -m "my first commit"
+9)git remote add origin https://github.com/treddy2/ravi-proj.git
+10)git push -u origin master
+=========================================================
+5.1)git checkout -b ravi-proj-dev
+5.2)git add test.py or *(for all directory and files)
+5.3)git commit -m "New dev project"
+5.4)git push
+6)git push --set-upstream origin ravi-proj-dev ( If you want to update to new branch)
+
+Git Repository Credentials:
+git Login : treddy2
+git password : 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
+===============================================================================
+

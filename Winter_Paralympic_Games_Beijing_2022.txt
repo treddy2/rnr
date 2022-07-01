@@ -1,0 +1,67 @@
+
+Docker Files:
+===================
+Document
+Dockerfile reference | Docker Documentation
+
+LAB
+Introduction to Docker | Google Cloud Skills Boost for Partners
+
+
+2)Kuberneties Engine:
+Document
+https://kubernetes.io/docs/concepts/
+LAB
+App Dev: Deploying the Application into Kubernetes Engine - Python | Google Cloud Skills Boost
+Hello Node Kubernetes | Google Cloud Skills Boost
+Managing Deployments Using Kubernetes Engine | Google Cloud Skills Boost
+
+Check out part 1 for how to install Kubernetes on Windows:
+https://youtu.be/8h4FoWK7tIA
+
+Check out part 2 of how to use KUBECTL:
+https://youtu.be/feLpGydQVio
+
+Check out part 3 of how to do deployments
+https://youtu.be/DMpEZEakYVc
+
+Check out part 4 of how to manage application configurations
+https://youtu.be/o-gXx7r7Rz4
+
+Check out part 5 of secret management explained
+https://youtu.be/o36yTfGDmZ0
+
+Google cloud market place
+-------------------------------
+https://cloud.google.com/marketplace/docs/partners/get-started
+https://cloud.google.com/marketplace/docs/partners/develop
+https://developers.google.com/gcp-marketplace-saas#0
+https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
+
+How to sell your app in Google marketplace
+https://www.bing.com/videos/search?q=google+marketplace&&view=detail&mid=CE6EF2A8396997F39E5ACE6EF2A8396997F39E5A&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dgoogle%2Bmarketplace%26FORM%3DHDRSC4
+------------------------------------------------------------------------------------------------
+Delivery ->
+(buy) 520*92 = 47840
+(sell) 539*92 = 49588
+=====================
+profit = 1748,14449(nifty),2400(indusind)
+=====================
+Tanima -   52045015
+Abdul samie - 51981003
+Guanamrith singh - 51921449
+Vaibhav Gupta - 51739883
+Lalit Tripathi - 52059712
+Javeedahmad:- 52055607
+Somi Taslim -52053403
+Ashutosh Rusiya- 52057555
+Chilla Venkateswara Reddy - 52055725
+Myana Srija
+Sricharan - 51911070
+
+Hi Team, could you Please provide access for above domains to below persons. 52045015,51981003,51921449,51739883,52059712,52055607,52053403,52057555,52055725,51911070
+
+https://docs.google.com , https://drive.google.com , https://chat.google.com , https://meet.google.com , https://workspace.google.com , https://gmail.com , https://youtube.com , https://qwiklabs.com
+https://console.cloud.google.com/,https://partner.cloudskillsboost.google/
+
+
